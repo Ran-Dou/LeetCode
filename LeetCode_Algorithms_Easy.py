@@ -107,10 +107,25 @@ class Solution3:
         strtolist = list(s)
         [y-x for x, y in zip(A[:-1], A[1:])]
 
+# 2019.09.30
+# Easy
+# Add Binary
+class Solution67:
+    def addBinary(self, a: str, b: str) -> str:
+        a_base10 = int(a, 2)
+        b_base10 = int(b, 2)
+        sum_base10 = a_base10 + b_base10
+        sum_base2 = str(bin(sum_base10))
+        return sum_base2[2:]
 
+# Easy
+# Sqrt(x)
+class Solution69:
+    def mySqrt(self, x: int) -> int:
+        return int(x**0.5)
 
-
-
+# Easy
+# 
 
 
 
