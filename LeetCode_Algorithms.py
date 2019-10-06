@@ -71,6 +71,21 @@ class Solution14:
             else: break
         return ''.join(common_prefix)
 
+# 20. Valid Parentheses
+class Solution20:
+    def isValid(self, s: str) -> bool:
+        stack = []
+        dict = {"]":"[", "}":"{", ")":"("}
+        for char in s:
+            if char in dict.values():
+                stack.append(char)
+            elif char in dict.keys():
+                if stack == [] or dict[char] != stack.pop():
+                    return False
+            else:
+                return False
+        return stack == []
+
 # 26. Remove Duplicates from Sorted Array
 class Solution26:
     def removeDuplicates(self, nums: list[int]) -> int:
@@ -164,6 +179,16 @@ class Solution67:
 class Solution69:
     def mySqrt(self, x: int) -> int:
         return int(x**0.5)
+
+# 70. Climbing Stairs
+class Solution70:
+    def climbStairs(self, n: int) -> int:
+        a = 1
+        b = 1
+        for i in range(n):
+            a, b = b, a
+            a += b
+        return b
 
 
 

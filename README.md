@@ -7,6 +7,7 @@ LeetCode Algorithms
 9. Palindrome Number
 13. Roman to Integer
 14. Longest Common Prefix
+20. Valid Parentheses
 26. Remove Duplicates from Sorted Array
 27. Remove Element
 28. Implement strStr()
@@ -16,6 +17,7 @@ LeetCode Algorithms
 66. Plus One
 67. Add Binary
 69. Sqrt(x)
+70. Climbing Stairs
 
 
 
