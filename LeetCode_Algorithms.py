@@ -174,7 +174,7 @@ class Solution67:
         sum_base10 = a_base10 + b_base10
         sum_base2 = str(bin(sum_base10))
         return sum_base2[2:]
-
+ 
 # 69. Sqrt(x)
 class Solution69:
     def mySqrt(self, x: int) -> int:
